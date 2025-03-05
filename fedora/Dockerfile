@@ -29,7 +29,3 @@ RUN chmod +x linux/kernbench.sh
 
 # Default command: Run kernbench
 CMD ["/bin/bash", "-c", "cd /kernbench/linux && ./kernbench.sh"]
-
-
-# podman run -it --privileged -v /lib/modules:/lib/modules -v /usr/src/kernels:/usr/src/kernels kernbench:latest
-# podman run -it --privileged -v /lib/modules:/lib/modules -v /usr/src/kernels:/usr/src/kernels kernbench:latest /bin/bash
