@@ -75,7 +75,7 @@ The benchmark will output performance metrics like:
 
 ## Credits
 This project utilizes:
-- The [Linux Kernel source](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git).
+- The [Linux Kernel source](https://github.com/torvalds/linux.git).
 - The [Linux Test Project (LTP)](https://github.com/linux-test-project/ltp) for the Kernbench script.
 
 
