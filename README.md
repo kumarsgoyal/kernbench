@@ -3,7 +3,8 @@
 This repository provides Dockerfiles for running Kernbench inside a containerized environment. It supports both Fedora and Ubuntu distributions.
 
 ## What is Kernbench?
-Kernbench is a CPU-intensive benchmark for measuring Linux kernel compilation performance under different load conditions.
+## What is Kernbench?
+[Kernbench](https://github.com/linux-test-project/ltp) is a CPU-intensive benchmark for measuring Linux kernel compilation performance under different load conditions.
 
 ## Supported Distributions
 - **Fedora** (Latest)
@@ -70,6 +71,12 @@ The benchmark will output performance metrics like:
 - CPU Utilization
 - Context Switches
 - System & User Time
+
+
+## Credits
+This project utilizes:
+- The [Linux Kernel source](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git).
+- The [Linux Test Project (LTP)](https://github.com/linux-test-project/ltp) for the Kernbench script.
 
 
 ## Contributions
