@@ -49,7 +49,7 @@ OR
 ### 3. Running the Podman or Docker Image
 #### Fedora
 
-```podman run -it --privileged -v /lib/modules:/lib modules -v /usr/src:/usr/src kernbench-fedora:latest ``` 
+```podman run -it --privileged -v /lib/modules:/lib/modules -v /usr/src:/usr/src kernbench-fedora:latest ``` 
 
 OR
 
@@ -57,7 +57,7 @@ OR
 
 #### Ubuntu
 
-```podman run -it --privileged -v /lib/modules:/lib modules -v /usr/src:/usr/src kernbench-ubuntu:latest ``` 
+```podman run -it --privileged -v /lib/modules:/lib/modules -v /usr/src:/usr/src kernbench-ubuntu:latest ``` 
 
 OR
 
