@@ -4,12 +4,10 @@ FROM ubuntu:latest
 # Update and install required dependencies
 RUN apt update -y && \
     apt install -y \
-    git vim make time \
-    coreutils findutils diffutils \
+    git vim make gawk time coreutils \
     gcc flex bison bc \
-    libncurses-dev libssl-dev libelf-dev \
-    linux-headers-generic \
-    perl perl-modules patch tar gzip cpio \
+    libncurses-dev libelf-dev \
+    libssl-dev perl python3 dwarves \
     && apt clean
 
 # Set the working directory

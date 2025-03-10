@@ -5,13 +5,11 @@ FROM fedora:latest
 RUN dnf update -y && \
     dnf install -y \
     git vim make time awk date yes \
-    util-linux findutils diffutils \
-    gcc flex bison bc \ 
-    ncurses-devel openssl-devel elfutils-libelf-devel \
-    kernel-headers kernel-devel \
-    perl perl-Data-Dumper patch tar gzip cpio \
+    gcc bc flex bison \
+    ncurses-devel elfutils-libelf-devel \
+    openssl-devel perl python3 dwarves \
     && dnf clean all
-
+    
 # Set the working directory
 WORKDIR /kernbench
 

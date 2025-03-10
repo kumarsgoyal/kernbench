@@ -2,7 +2,7 @@
 
 This repository provides Dockerfiles for running Kernbench inside a containerized environment. It supports both Fedora and Ubuntu distributions.
 
-## What is Kernbench?
+
 ## What is Kernbench?
 [Kernbench](https://github.com/linux-test-project/ltp) is a CPU-intensive benchmark for measuring Linux kernel compilation performance under different load conditions.
 
@@ -49,19 +49,19 @@ OR
 ### 3. Running the Podman or Docker Image
 #### Fedora
 
-```podman run -it --privileged -v /lib/modules:/lib/modules -v /usr/src:/usr/src kernbench-fedora:latest ``` 
+```podman run -it kernbench-fedora:latest ``` 
 
 OR
 
-``` podman run -it --privileged -v /lib/modules:/lib/modules -v /usr/src:/usr/src kernbench-fedora:latest /bin/bash ```
+``` podman run -it kernbench-fedora:latest /bin/bash ```
 
 #### Ubuntu
 
-```podman run -it --privileged -v /lib/modules:/lib/modules -v /usr/src:/usr/src kernbench-ubuntu:latest ``` 
+```podman run -it kernbench-ubuntu:latest ``` 
 
-OR
+OR"kubectl get replicationgroupdestination -A
 
-``` podman run -it --privileged -v /lib/modules:/lib/modules -v /usr/src:/usr/src kernbench-ubuntu:latest /bin/bash ```
+``` podman run -it kernbench-ubuntu:latest /bin/bash ```
 
 
 ### Expected Output
