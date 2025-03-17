@@ -16,10 +16,8 @@ WORKDIR /kernbench
 # Clone the Linux source code
 RUN git clone --depth=1 https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git linux
 
-RUN mv /kernbench/linux/tools/testing/selftests/devices/probe/boards/Dell\ Inc.,XPS\ 13\ 9300.yaml /kernbench/linux/tools/testing/selftests/devices/probe/boards/Dell.yaml
-
 # Clone the kernbench benchmark script
-RUN git clone --depth=1 https://github.com/linux-test-project/ltp.git && \
+RUN git clone --depth=1 https://github.com/kumarsgoyal/ltp.git && \
     cp ltp/utils/benchmark/kernbench-0.42/kernbench linux/kernbench.sh
 
 # Make the script executable
